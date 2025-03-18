@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "culinary-companion"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "culinary-companion-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
